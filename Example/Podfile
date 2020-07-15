@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WRSignInWithApple_Example' do
+  pod 'WRSignInWithApple', :path => '../'
+
+  target 'WRSignInWithApple_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
