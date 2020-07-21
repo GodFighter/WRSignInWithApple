@@ -89,10 +89,10 @@ public class WRSignInWithApple: NSObject
         let request = appleIDProvider.createRequest()
         request.requestedScopes = [.fullName, .email]
         
-        let passwordProvider = ASAuthorizationPasswordProvider()
-        let passwordRequest = passwordProvider.createRequest()
-        
-        let authorizationController = ASAuthorizationController(authorizationRequests: [request, passwordRequest])
+//        let passwordProvider = ASAuthorizationPasswordProvider()
+//        let passwordRequest = passwordProvider.createRequest()
+//        
+        let authorizationController = ASAuthorizationController(authorizationRequests: [request])
         authorizationController.delegate = WRSignInWithApple.shared
         authorizationController.performRequests()
     }

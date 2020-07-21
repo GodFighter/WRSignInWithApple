@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WRSignInWithApple'
-  s.version          = '0.9.2'
+  s.version          = '0.9.3'
   s.summary          = 'Sign in with Apple实现。并将userId缓存到钥匙串中。'
 
 # This description is used to generate tags and improve search results.
