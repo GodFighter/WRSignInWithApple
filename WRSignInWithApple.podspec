@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WRSignInWithApple'
-  s.version          = '0.9.0'
+  s.version          = '0.9.1'
   s.summary          = 'Sign in with Apple实现。并将userId缓存到钥匙串中。'
 
 # This description is used to generate tags and improve search results.
@@ -29,7 +29,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '13.0'
 
   s.source_files = 'WRSignInWithApple/Classes/**/*'
-  
+  s.swift_version = '5.0'
+
   # s.resource_bundles = {
   #   'WRSignInWithApple' => ['WRSignInWithApple/Assets/*.png']
   # }
