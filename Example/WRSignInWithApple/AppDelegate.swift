@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WRSignInWithApple
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        WRSignInWithApple.Setup()
+//        WRSignInWithApple.SignOut()
+        WRSignInWithApple.Check { (success) in
+            
+        }
+//        WRSignInWithApple.Check{
+//
+//        }
         // Override point for customization after application launch.
         return true
     }
